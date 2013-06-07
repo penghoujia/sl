@@ -1,0 +1,741 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (b3b77c7d).
+//
+// DcapRtDB.tlh
+//
+// C++ source equivalent of Win32 type library .\DcapRtDB.exe
+// compiler-generated file created 07/18/09 at 15:10:09 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ DcapRtDBCom;
+struct __declspec(uuid("2b3e4ba4-00d3-11d5-a11c-00aa00b52d41"))
+/* dual interface */ IDcapRtDBCom;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IDcapRtDBCom, __uuidof(IDcapRtDBCom));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("2b3e4ba5-00d3-11d5-a11c-00aa00b52d41"))
+DcapRtDBCom;
+    // [ default ] interface IDcapRtDBCom
+
+struct __declspec(uuid("2b3e4ba4-00d3-11d5-a11c-00aa00b52d41"))
+IDcapRtDBCom : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT AddBox (
+        int StationID,
+        int ComID,
+        unsigned long Addr,
+        int SpaceID,
+        int ModeID,
+        int PT,
+        int CT,
+        int nDZDataCount,
+        int nTTDataCount,
+        unsigned short unsBoxID,
+        _bstr_t bstrBoxName,
+        int nYCDataCount,
+        int nDDDataCount,
+        int nYXDataCount,
+        int nGZDataCount,
+        int nXBDataCount );
+    HRESULT InitData (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT RemoveBox (
+        unsigned short nBoxID );
+    HRESULT RemoveAllBoxes ( );
+    HRESULT GetBoxCount (
+        int * pnBoxCount );
+    HRESULT GetDataCount (
+        int * pnDataCount );
+    HRESULT SetCollectValue (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetRuntimeValue (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetRuntimeValue (
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetStatus (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetStatus (
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetSpaceRuntimeValue (
+        unsigned short ntSpaceID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetSpaceRuntimeValue (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetSpaceStatus (
+        unsigned short ntSpaceID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetSpaceStatus (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetBoxCommStatus (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetBoxCommStatus (
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetXBDataValue (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetXBDataValue (
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetSpaceXBDataValue (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetSpaceXBDataValue (
+        unsigned short ntSpaceID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetParameter (
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetParameter (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT AddSOE (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetSOE (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT AddActRecord (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetActRecord (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT AddCmd (
+        unsigned long unlCmdType,
+        VARIANT * pvCmdParam,
+        unsigned long * punlCmdID );
+    HRESULT RemoveCmd (
+        unsigned long unlCmdID );
+    HRESULT QueryCmd (
+        unsigned long unlLastCmdID,
+        unsigned long * punlNewCmdID );
+    HRESULT GetCmd (
+        unsigned long unlCmdID,
+        unsigned long * punlCmdType,
+        VARIANT * pvCmdParam );
+    HRESULT QueryCmdStatus (
+        unsigned long unlCmdID,
+        unsigned long * punlCmdStatus );
+    HRESULT SetCmdStatus (
+        unsigned long unlCmdID,
+        unsigned long unlCmdStatus );
+    HRESULT SetCmdResult (
+        unsigned long unlCmdID,
+        VARIANT * pvCmdResult );
+    HRESULT GetCmdResult (
+        unsigned long unlCmdID,
+        VARIANT * pvCmdResult );
+    HRESULT GetLastCmdID (
+        unsigned long * punlCmdID );
+    HRESULT AddNotify (
+        int nDataCount,
+        VARIANT * pvDataArray,
+        unsigned long * punlNotifyID );
+    HRESULT GetNotify (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetSpaceDataParameter (
+        unsigned char ntTableType,
+        unsigned short unsSpaceID,
+        unsigned short unsSpaceIndex,
+        unsigned char ntParamType,
+        double * fParam );
+    HRESULT SetSpaceDataParameter (
+        unsigned char ntTableType,
+        unsigned short unsSpaceID,
+        unsigned short unsSpaceIndex,
+        unsigned char ntParamType,
+        double fParam );
+    HRESULT AddExtendedData (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetExtendedDataValue (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetExtendedDataValue (
+        _bstr_t bstrType,
+        int nId,
+        int nIndex,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT ValidateData (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetDataStatus (
+        unsigned long nModifyType,
+        unsigned short nIndexType,
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT AddSoeEx (
+        int DataCount,
+        VARIANT * DataArray );
+    HRESULT GetSoeEx (
+        unsigned long * StartId,
+        int * DataCount,
+        VARIANT * DataArray );
+    HRESULT ReInit ( );
+    HRESULT SetActor (
+        _bstr_t Computer,
+        unsigned long Actor );
+    HRESULT GetActor (
+        _bstr_t Computer,
+        unsigned long * Actor );
+    HRESULT GetSysNetInfo (
+        int * InfoCount,
+        VARIANT * InfoArray );
+    HRESULT AddStation (
+        int StationID,
+        _bstr_t StationName,
+        int StationNode );
+    HRESULT AddComm (
+        int ID,
+        _bstr_t Name,
+        _bstr_t Type,
+        int Addr,
+        _bstr_t Para,
+        _bstr_t Discribe,
+        int ProID,
+        int Node );
+    HRESULT AddNetInfo (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetDZData (
+        unsigned short BoxID,
+        int Count,
+        VARIANT * pvDataArray );
+    HRESULT GetDZData (
+        unsigned short BoxID,
+        int * Count,
+        VARIANT * pvDataArray );
+    HRESULT GetTTData (
+        unsigned short BoxID,
+        int * Count,
+        VARIANT * pvDataArray );
+    HRESULT SetTTData (
+        unsigned short BoxID,
+        int Count,
+        VARIANT * pvDataArray );
+    HRESULT GetDataByBoxID (
+        unsigned short BoxID,
+        unsigned char DataType,
+        unsigned short * DataCount,
+        VARIANT * vData );
+    HRESULT AddOprData (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetOprData (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT SetSysNetInfo (
+        int Count,
+        VARIANT * InfoArray );
+    HRESULT DeleteSysNetInfo (
+        int Count,
+        VARIANT * InfoArray );
+    HRESULT GetBoxPara (
+        int * Count,
+        VARIANT * DataArray );
+    HRESULT GetStationPara (
+        int * Count,
+        VARIANT * DataArray );
+    HRESULT AddExternSoe (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetExternSoe (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT AddExternActRecord (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetExternActRecord (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT RefreshProcInfo (
+        _bstr_t ProcName );
+    HRESULT AddOpr (
+        int iCount,
+        VARIANT * vData );
+    HRESULT GetStationNum (
+        int * iCount );
+    HRESULT GetSpaceNum (
+        int * iCount );
+    HRESULT GetBoxNum (
+        int * iCount );
+    HRESULT GetCommNum (
+        int * iCount );
+    HRESULT GetStationDBPara (
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetSpacePara (
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetBoxDBPara (
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetCommPara (
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetTotalData (
+        int iDataType,
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetDataByBox (
+        int iDataType,
+        int iBoxID,
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetDataBySpace (
+        int iDataType,
+        int iSpaceID,
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetDZDataByTemID (
+        int iTemId,
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetTTDataByTemID (
+        int iTemId,
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetHangPara (
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetRunDay (
+        int * RunDay );
+    HRESULT GetDevicePara (
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetUserPara (
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetGroupPara (
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetUserDefinePara (
+        int * iCount,
+        VARIANT * vData );
+    HRESULT GetGZTempletPara (
+        int * Count,
+        VARIANT * vData );
+    HRESULT AddOprDataEx (
+        int nDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetOprDataEx (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray );
+    HRESULT GetGZTempletParaByTemID (
+        int TemID,
+        int * Count,
+        VARIANT * vData );
+    HRESULT GetProtocolParaByID (
+        int ProtocolID,
+        int * iCount,
+        VARIANT * vData );
+    HRESULT SetYkLockSign (
+        int BoxID,
+        int BoxIndex,
+        unsigned long State );
+    HRESULT GetYkLockSign (
+        int BoxID,
+        int BoxIndex,
+        unsigned long * State );
+    HRESULT SetDZDataEx (
+        unsigned short BoxID,
+        int Count,
+        VARIANT * pvDataArray );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_AddBox (
+        int StationID,
+        int ComID,
+        unsigned long Addr,
+        int SpaceID,
+        int ModeID,
+        int PT,
+        int CT,
+        int nDZDataCount,
+        int nTTDataCount,
+        unsigned short unsBoxID,
+        BSTR bstrBoxName,
+        int nYCDataCount,
+        int nDDDataCount,
+        int nYXDataCount,
+        int nGZDataCount,
+        int nXBDataCount ) = 0;
+    virtual HRESULT __stdcall raw_InitData (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_RemoveBox (
+        unsigned short nBoxID ) = 0;
+    virtual HRESULT __stdcall raw_RemoveAllBoxes ( ) = 0;
+    virtual HRESULT __stdcall raw_GetBoxCount (
+        int * pnBoxCount ) = 0;
+    virtual HRESULT __stdcall raw_GetDataCount (
+        int * pnDataCount ) = 0;
+    virtual HRESULT __stdcall raw_SetCollectValue (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetRuntimeValue (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetRuntimeValue (
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetStatus (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetStatus (
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetSpaceRuntimeValue (
+        unsigned short ntSpaceID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetSpaceRuntimeValue (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetSpaceStatus (
+        unsigned short ntSpaceID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetSpaceStatus (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetBoxCommStatus (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetBoxCommStatus (
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetXBDataValue (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetXBDataValue (
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetSpaceXBDataValue (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetSpaceXBDataValue (
+        unsigned short ntSpaceID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetParameter (
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetParameter (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_AddSOE (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetSOE (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_AddActRecord (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetActRecord (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_AddCmd (
+        unsigned long unlCmdType,
+        VARIANT * pvCmdParam,
+        unsigned long * punlCmdID ) = 0;
+    virtual HRESULT __stdcall raw_RemoveCmd (
+        unsigned long unlCmdID ) = 0;
+    virtual HRESULT __stdcall raw_QueryCmd (
+        unsigned long unlLastCmdID,
+        unsigned long * punlNewCmdID ) = 0;
+    virtual HRESULT __stdcall raw_GetCmd (
+        unsigned long unlCmdID,
+        unsigned long * punlCmdType,
+        VARIANT * pvCmdParam ) = 0;
+    virtual HRESULT __stdcall raw_QueryCmdStatus (
+        unsigned long unlCmdID,
+        unsigned long * punlCmdStatus ) = 0;
+    virtual HRESULT __stdcall raw_SetCmdStatus (
+        unsigned long unlCmdID,
+        unsigned long unlCmdStatus ) = 0;
+    virtual HRESULT __stdcall raw_SetCmdResult (
+        unsigned long unlCmdID,
+        VARIANT * pvCmdResult ) = 0;
+    virtual HRESULT __stdcall raw_GetCmdResult (
+        unsigned long unlCmdID,
+        VARIANT * pvCmdResult ) = 0;
+    virtual HRESULT __stdcall raw_GetLastCmdID (
+        unsigned long * punlCmdID ) = 0;
+    virtual HRESULT __stdcall raw_AddNotify (
+        int nDataCount,
+        VARIANT * pvDataArray,
+        unsigned long * punlNotifyID ) = 0;
+    virtual HRESULT __stdcall raw_GetNotify (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetSpaceDataParameter (
+        unsigned char ntTableType,
+        unsigned short unsSpaceID,
+        unsigned short unsSpaceIndex,
+        unsigned char ntParamType,
+        double * fParam ) = 0;
+    virtual HRESULT __stdcall raw_SetSpaceDataParameter (
+        unsigned char ntTableType,
+        unsigned short unsSpaceID,
+        unsigned short unsSpaceIndex,
+        unsigned char ntParamType,
+        double fParam ) = 0;
+    virtual HRESULT __stdcall raw_AddExtendedData (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetExtendedDataValue (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetExtendedDataValue (
+        BSTR bstrType,
+        int nId,
+        int nIndex,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_ValidateData (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetDataStatus (
+        unsigned long nModifyType,
+        unsigned short nIndexType,
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_AddSoeEx (
+        int DataCount,
+        VARIANT * DataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetSoeEx (
+        unsigned long * StartId,
+        int * DataCount,
+        VARIANT * DataArray ) = 0;
+    virtual HRESULT __stdcall raw_ReInit ( ) = 0;
+    virtual HRESULT __stdcall raw_SetActor (
+        BSTR Computer,
+        unsigned long Actor ) = 0;
+    virtual HRESULT __stdcall raw_GetActor (
+        BSTR Computer,
+        unsigned long * Actor ) = 0;
+    virtual HRESULT __stdcall raw_GetSysNetInfo (
+        int * InfoCount,
+        VARIANT * InfoArray ) = 0;
+    virtual HRESULT __stdcall raw_AddStation (
+        int StationID,
+        BSTR StationName,
+        int StationNode ) = 0;
+    virtual HRESULT __stdcall raw_AddComm (
+        int ID,
+        BSTR Name,
+        BSTR Type,
+        int Addr,
+        BSTR Para,
+        BSTR Discribe,
+        int ProID,
+        int Node ) = 0;
+    virtual HRESULT __stdcall raw_AddNetInfo (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetDZData (
+        unsigned short BoxID,
+        int Count,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetDZData (
+        unsigned short BoxID,
+        int * Count,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetTTData (
+        unsigned short BoxID,
+        int * Count,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetTTData (
+        unsigned short BoxID,
+        int Count,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetDataByBoxID (
+        unsigned short BoxID,
+        unsigned char DataType,
+        unsigned short * DataCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_AddOprData (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetOprData (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_SetSysNetInfo (
+        int Count,
+        VARIANT * InfoArray ) = 0;
+    virtual HRESULT __stdcall raw_DeleteSysNetInfo (
+        int Count,
+        VARIANT * InfoArray ) = 0;
+    virtual HRESULT __stdcall raw_GetBoxPara (
+        int * Count,
+        VARIANT * DataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetStationPara (
+        int * Count,
+        VARIANT * DataArray ) = 0;
+    virtual HRESULT __stdcall raw_AddExternSoe (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetExternSoe (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_AddExternActRecord (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetExternActRecord (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_RefreshProcInfo (
+        BSTR ProcName ) = 0;
+    virtual HRESULT __stdcall raw_AddOpr (
+        int iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetStationNum (
+        int * iCount ) = 0;
+    virtual HRESULT __stdcall raw_GetSpaceNum (
+        int * iCount ) = 0;
+    virtual HRESULT __stdcall raw_GetBoxNum (
+        int * iCount ) = 0;
+    virtual HRESULT __stdcall raw_GetCommNum (
+        int * iCount ) = 0;
+    virtual HRESULT __stdcall raw_GetStationDBPara (
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetSpacePara (
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetBoxDBPara (
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetCommPara (
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetTotalData (
+        int iDataType,
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetDataByBox (
+        int iDataType,
+        int iBoxID,
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetDataBySpace (
+        int iDataType,
+        int iSpaceID,
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetDZDataByTemID (
+        int iTemId,
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetTTDataByTemID (
+        int iTemId,
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetHangPara (
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetRunDay (
+        int * RunDay ) = 0;
+    virtual HRESULT __stdcall raw_GetDevicePara (
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetUserPara (
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetGroupPara (
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetUserDefinePara (
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetGZTempletPara (
+        int * Count,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_AddOprDataEx (
+        int nDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetOprDataEx (
+        unsigned long * punlStartID,
+        int * pnDataCount,
+        VARIANT * pvDataArray ) = 0;
+    virtual HRESULT __stdcall raw_GetGZTempletParaByTemID (
+        int TemID,
+        int * Count,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_GetProtocolParaByID (
+        int ProtocolID,
+        int * iCount,
+        VARIANT * vData ) = 0;
+    virtual HRESULT __stdcall raw_SetYkLockSign (
+        int BoxID,
+        int BoxIndex,
+        unsigned long State ) = 0;
+    virtual HRESULT __stdcall raw_GetYkLockSign (
+        int BoxID,
+        int BoxIndex,
+        unsigned long * State ) = 0;
+    virtual HRESULT __stdcall raw_SetDZDataEx (
+        unsigned short BoxID,
+        int Count,
+        VARIANT * pvDataArray ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "DcapRtDB.tli"
+
+#pragma pack(pop)

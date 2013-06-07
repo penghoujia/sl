@@ -1,0 +1,600 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (b3b77c7d).
+//
+// DcapRtDB.tli
+//
+// Wrapper implementations for Win32 type library .\DcapRtDB.exe
+// compiler-generated file created 07/18/09 at 15:10:09 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IDcapRtDBCom wrapper method implementations
+//
+
+inline HRESULT IDcapRtDBCom::AddBox ( int StationID, int ComID, unsigned long Addr, int SpaceID, int ModeID, int PT, int CT, int nDZDataCount, int nTTDataCount, unsigned short unsBoxID, _bstr_t bstrBoxName, int nYCDataCount, int nDDDataCount, int nYXDataCount, int nGZDataCount, int nXBDataCount ) {
+    HRESULT _hr = raw_AddBox(StationID, ComID, Addr, SpaceID, ModeID, PT, CT, nDZDataCount, nTTDataCount, unsBoxID, bstrBoxName, nYCDataCount, nDDDataCount, nYXDataCount, nGZDataCount, nXBDataCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::InitData ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_InitData(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::RemoveBox ( unsigned short nBoxID ) {
+    HRESULT _hr = raw_RemoveBox(nBoxID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::RemoveAllBoxes ( ) {
+    HRESULT _hr = raw_RemoveAllBoxes();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetBoxCount ( int * pnBoxCount ) {
+    HRESULT _hr = raw_GetBoxCount(pnBoxCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetDataCount ( int * pnDataCount ) {
+    HRESULT _hr = raw_GetDataCount(pnDataCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetCollectValue ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetCollectValue(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetRuntimeValue ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetRuntimeValue(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetRuntimeValue ( int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetRuntimeValue(pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetStatus ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetStatus(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetStatus ( int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetStatus(pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetSpaceRuntimeValue ( unsigned short ntSpaceID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetSpaceRuntimeValue(ntSpaceID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetSpaceRuntimeValue ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetSpaceRuntimeValue(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetSpaceStatus ( unsigned short ntSpaceID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetSpaceStatus(ntSpaceID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetSpaceStatus ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetSpaceStatus(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetBoxCommStatus ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetBoxCommStatus(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetBoxCommStatus ( int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetBoxCommStatus(pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetXBDataValue ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetXBDataValue(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetXBDataValue ( int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetXBDataValue(pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetSpaceXBDataValue ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetSpaceXBDataValue(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetSpaceXBDataValue ( unsigned short ntSpaceID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetSpaceXBDataValue(ntSpaceID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetParameter ( int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetParameter(pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetParameter ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetParameter(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddSOE ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_AddSOE(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetSOE ( unsigned long * punlStartID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetSOE(punlStartID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddActRecord ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_AddActRecord(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetActRecord ( unsigned long * punlStartID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetActRecord(punlStartID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddCmd ( unsigned long unlCmdType, VARIANT * pvCmdParam, unsigned long * punlCmdID ) {
+    HRESULT _hr = raw_AddCmd(unlCmdType, pvCmdParam, punlCmdID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::RemoveCmd ( unsigned long unlCmdID ) {
+    HRESULT _hr = raw_RemoveCmd(unlCmdID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::QueryCmd ( unsigned long unlLastCmdID, unsigned long * punlNewCmdID ) {
+    HRESULT _hr = raw_QueryCmd(unlLastCmdID, punlNewCmdID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetCmd ( unsigned long unlCmdID, unsigned long * punlCmdType, VARIANT * pvCmdParam ) {
+    HRESULT _hr = raw_GetCmd(unlCmdID, punlCmdType, pvCmdParam);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::QueryCmdStatus ( unsigned long unlCmdID, unsigned long * punlCmdStatus ) {
+    HRESULT _hr = raw_QueryCmdStatus(unlCmdID, punlCmdStatus);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetCmdStatus ( unsigned long unlCmdID, unsigned long unlCmdStatus ) {
+    HRESULT _hr = raw_SetCmdStatus(unlCmdID, unlCmdStatus);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetCmdResult ( unsigned long unlCmdID, VARIANT * pvCmdResult ) {
+    HRESULT _hr = raw_SetCmdResult(unlCmdID, pvCmdResult);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetCmdResult ( unsigned long unlCmdID, VARIANT * pvCmdResult ) {
+    HRESULT _hr = raw_GetCmdResult(unlCmdID, pvCmdResult);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetLastCmdID ( unsigned long * punlCmdID ) {
+    HRESULT _hr = raw_GetLastCmdID(punlCmdID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddNotify ( int nDataCount, VARIANT * pvDataArray, unsigned long * punlNotifyID ) {
+    HRESULT _hr = raw_AddNotify(nDataCount, pvDataArray, punlNotifyID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetNotify ( unsigned long * punlStartID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetNotify(punlStartID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetSpaceDataParameter ( unsigned char ntTableType, unsigned short unsSpaceID, unsigned short unsSpaceIndex, unsigned char ntParamType, double * fParam ) {
+    HRESULT _hr = raw_GetSpaceDataParameter(ntTableType, unsSpaceID, unsSpaceIndex, ntParamType, fParam);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetSpaceDataParameter ( unsigned char ntTableType, unsigned short unsSpaceID, unsigned short unsSpaceIndex, unsigned char ntParamType, double fParam ) {
+    HRESULT _hr = raw_SetSpaceDataParameter(ntTableType, unsSpaceID, unsSpaceIndex, ntParamType, fParam);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddExtendedData ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_AddExtendedData(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetExtendedDataValue ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetExtendedDataValue(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetExtendedDataValue ( _bstr_t bstrType, int nId, int nIndex, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetExtendedDataValue(bstrType, nId, nIndex, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::ValidateData ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_ValidateData(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetDataStatus ( unsigned long nModifyType, unsigned short nIndexType, int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetDataStatus(nModifyType, nIndexType, nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddSoeEx ( int DataCount, VARIANT * DataArray ) {
+    HRESULT _hr = raw_AddSoeEx(DataCount, DataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetSoeEx ( unsigned long * StartId, int * DataCount, VARIANT * DataArray ) {
+    HRESULT _hr = raw_GetSoeEx(StartId, DataCount, DataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::ReInit ( ) {
+    HRESULT _hr = raw_ReInit();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetActor ( _bstr_t Computer, unsigned long Actor ) {
+    HRESULT _hr = raw_SetActor(Computer, Actor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetActor ( _bstr_t Computer, unsigned long * Actor ) {
+    HRESULT _hr = raw_GetActor(Computer, Actor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetSysNetInfo ( int * InfoCount, VARIANT * InfoArray ) {
+    HRESULT _hr = raw_GetSysNetInfo(InfoCount, InfoArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddStation ( int StationID, _bstr_t StationName, int StationNode ) {
+    HRESULT _hr = raw_AddStation(StationID, StationName, StationNode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddComm ( int ID, _bstr_t Name, _bstr_t Type, int Addr, _bstr_t Para, _bstr_t Discribe, int ProID, int Node ) {
+    HRESULT _hr = raw_AddComm(ID, Name, Type, Addr, Para, Discribe, ProID, Node);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddNetInfo ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_AddNetInfo(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetDZData ( unsigned short BoxID, int Count, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetDZData(BoxID, Count, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetDZData ( unsigned short BoxID, int * Count, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetDZData(BoxID, Count, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetTTData ( unsigned short BoxID, int * Count, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetTTData(BoxID, Count, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetTTData ( unsigned short BoxID, int Count, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetTTData(BoxID, Count, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetDataByBoxID ( unsigned short BoxID, unsigned char DataType, unsigned short * DataCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetDataByBoxID(BoxID, DataType, DataCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddOprData ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_AddOprData(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetOprData ( unsigned long * punlStartID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetOprData(punlStartID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetSysNetInfo ( int Count, VARIANT * InfoArray ) {
+    HRESULT _hr = raw_SetSysNetInfo(Count, InfoArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::DeleteSysNetInfo ( int Count, VARIANT * InfoArray ) {
+    HRESULT _hr = raw_DeleteSysNetInfo(Count, InfoArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetBoxPara ( int * Count, VARIANT * DataArray ) {
+    HRESULT _hr = raw_GetBoxPara(Count, DataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetStationPara ( int * Count, VARIANT * DataArray ) {
+    HRESULT _hr = raw_GetStationPara(Count, DataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddExternSoe ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_AddExternSoe(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetExternSoe ( unsigned long * punlStartID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetExternSoe(punlStartID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddExternActRecord ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_AddExternActRecord(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetExternActRecord ( unsigned long * punlStartID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetExternActRecord(punlStartID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::RefreshProcInfo ( _bstr_t ProcName ) {
+    HRESULT _hr = raw_RefreshProcInfo(ProcName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddOpr ( int iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_AddOpr(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetStationNum ( int * iCount ) {
+    HRESULT _hr = raw_GetStationNum(iCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetSpaceNum ( int * iCount ) {
+    HRESULT _hr = raw_GetSpaceNum(iCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetBoxNum ( int * iCount ) {
+    HRESULT _hr = raw_GetBoxNum(iCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetCommNum ( int * iCount ) {
+    HRESULT _hr = raw_GetCommNum(iCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetStationDBPara ( int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetStationDBPara(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetSpacePara ( int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetSpacePara(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetBoxDBPara ( int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetBoxDBPara(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetCommPara ( int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetCommPara(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetTotalData ( int iDataType, int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetTotalData(iDataType, iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetDataByBox ( int iDataType, int iBoxID, int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetDataByBox(iDataType, iBoxID, iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetDataBySpace ( int iDataType, int iSpaceID, int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetDataBySpace(iDataType, iSpaceID, iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetDZDataByTemID ( int iTemId, int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetDZDataByTemID(iTemId, iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetTTDataByTemID ( int iTemId, int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetTTDataByTemID(iTemId, iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetHangPara ( int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetHangPara(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetRunDay ( int * RunDay ) {
+    HRESULT _hr = raw_GetRunDay(RunDay);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetDevicePara ( int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetDevicePara(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetUserPara ( int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetUserPara(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetGroupPara ( int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetGroupPara(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetUserDefinePara ( int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetUserDefinePara(iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetGZTempletPara ( int * Count, VARIANT * vData ) {
+    HRESULT _hr = raw_GetGZTempletPara(Count, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::AddOprDataEx ( int nDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_AddOprDataEx(nDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetOprDataEx ( unsigned long * punlStartID, int * pnDataCount, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_GetOprDataEx(punlStartID, pnDataCount, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetGZTempletParaByTemID ( int TemID, int * Count, VARIANT * vData ) {
+    HRESULT _hr = raw_GetGZTempletParaByTemID(TemID, Count, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetProtocolParaByID ( int ProtocolID, int * iCount, VARIANT * vData ) {
+    HRESULT _hr = raw_GetProtocolParaByID(ProtocolID, iCount, vData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetYkLockSign ( int BoxID, int BoxIndex, unsigned long State ) {
+    HRESULT _hr = raw_SetYkLockSign(BoxID, BoxIndex, State);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::GetYkLockSign ( int BoxID, int BoxIndex, unsigned long * State ) {
+    HRESULT _hr = raw_GetYkLockSign(BoxID, BoxIndex, State);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDcapRtDBCom::SetDZDataEx ( unsigned short BoxID, int Count, VARIANT * pvDataArray ) {
+    HRESULT _hr = raw_SetDZDataEx(BoxID, Count, pvDataArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

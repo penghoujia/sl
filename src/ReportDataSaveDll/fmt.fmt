@@ -1,0 +1,10 @@
+8.0
+8
+1       SQLCHAR       0       12      ","                       1     BoxID             ""
+2       SQLCHAR       0       12      ","                       2     BoxIndex          ""
+3       SQLCHAR       0       12      ","                       3     DataID            ""
+4       SQLCHAR       0       12      ","                       4     DataType          ""
+5       SQLCHAR       0       12      ","                       5     DataDay           ""
+6       SQLCHAR       0       12      ","                       6     StatInGroupId     ""
+7       SQLCHAR       0       12      ","                       7     TimeBoundId       ""
+8       SQLCHAR       0       30      "\r\n"                    8     DataValue         ""
